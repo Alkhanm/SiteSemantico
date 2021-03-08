@@ -30,35 +30,37 @@
             </header>
         </div>
     </div>
-    <div class="linha">
+    <div itemtype="https://schema.org/ContactPoint" class="linha">
         <section>
             <div class="coluna col4 sidebar">
                 <h3>Localização</h3>
                 <img src="img/mapa.jpg" />
                 <ul class="sem-padding sem-marcador">
-                    <li>Avenida Pio Correia</li>
-                    <li>Setor Coimbra</li>
-                    <li>Goiânia - GO</li>
+                    <li itemprop="addres">Avenida Pio Correia</li>
+                    <li itemprop="address">Setor Coimbra</li>
+                    <li itemprop="address">Goiânia - GO</li>
                 </ul>
                 <h3>Contato direto</h3>
-                <ul class="sem sem-marcador">
-                    <li>Fone: <strong>(62) 99999-9999</strong></li>
-                    <li>Email: <strong> programmer@hotmail.com</strong></li>
+                <ul itemtype="https://schema.org/ContactPage" itemscope itemprop="mainContentOfPage"
+                    class="sem sem-marcador">
+                    <li itemprop="author">AlkProgrammer</li>
+                    <li itemprop="telephone">Fone: <strong>(62) 99999-9999</strong></li>
+                    <li itemprop="email">Email: <strong> programmer@hotmail.com</strong></li>
                 </ul>
             </div>
             <div class="coluna col7 contato">
                 <h2>Envie sua mensagem</h2>
                 <form action="">
-                    <label for="nome">Seu nome:</label>
+                    <label itemprop="name" for="nome">Seu nome:</label>
                     <input type="text" name="nome" id="nome" />
 
-                    <label for="email">Seu email:</label>
+                    <label itemprop="email" for="email">Seu email:</label>
                     <input type="text" name="email" id="email" />
 
-                    <label for="assunto">Assunto:</label>
+                    <label itemprop="about" for="assunto">Assunto:</label>
                     <input type="text" name="assunto" id="assunto" />
 
-                    <label for="mensagem">Sua mensagem:</label>
+                    <label itemprop="about" for="mensagem">Sua mensagem:</label>
                     <textarea name="mensagem" id="mensagem"></textarea>
 
                     <input type="submit" class="botao" name="enviar" value="Enviar mensagem &raquo;" />
@@ -84,7 +86,10 @@
         <div class="linha">
             <footer>
                 <div class="coluna col12">
-                    <span> &copy; 2021 - RSite</span>
+                    <span itemtype="https://schema.org/CreativeWork" itemprop="copyrightYear">
+                        &copy; 2021 -
+                        <span itemprop="copyrightHolder">RSite</span>
+                    </span>
                 </div>
             </footer>
         </div>

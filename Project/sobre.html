@@ -30,32 +30,41 @@
             </header>
         </div>
     </div>
-    <div class="linha">
-        <section>
-            <div class="coluna col8">
+    <div class="linha" >
+        <section itemtype="https://schema.org/AboutPage" itemscope>
+            <div itemtype="https://schema.org/Person" class="coluna col8">
                 <h2>Sobre mim</h2>
-                <p>Meu nome é Deltrano, nascido em 1999 em uma cidade do interior do Tocantins.</p>
-                <h2>Por que trabalho com WEB?</h2>
+                <p>Meu nome é <Span itemprop="name">Deltrano</Span>, nascido em 1999 em uma cidade do interior do
+                    Tocantins.</p>
+                <h2 itemtype="https://schema.org/Occupation" itemscope>Por que trabalho com WEB?</h2>
                 <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla
                     at risus. Quisque purus magna, auctor et, sagittis ac,</p>
             </div>
-            <div class="coluna col4 sidebar">
+            <div class="coluna col4 sidebar" itemtype="https://schema.org/Occupation">
                 <h3>Formação profissional </h3>
                 <img src="img/formatura.jpg" />
                 <ul>
-                    <li>Estudante de Sistemas de Informação</li>
+                    <li itemtype="https://schema.org/Occupation" itemscope>Estudante de Sistemas de Informação</li>
                     <li>Faculdade Delta</li>
                 </ul>
                 <h3>Áreas de conhecimento</h3>
                 <ul>
-                    <li class="area-conhecimento">Linguagens de Programação:</li>
-                    <li>Java | JavaScript</li>
-                    <li class="area-conhecimento">Bancos de Dados:</li>
-                    <li>PostgreSQL | MySQL | Mongodb</li>
-                    <li class="area-conhecimento">Frameworkers:</li>
-                    <li>Vue.js | React Native | Spring Boot</li>
-                    <li class="area-conhecimento">Outros:</li>
-                    <li>Git & Github | CSS | HTML </li>
+                    <li itemprop="skills" class="area-conhecimento">
+                        Linguagens de Programação:</li>
+                    <li itemprop="skills">
+                        Java | JavaScript</li>
+                    <li itemprop="skills" class="area-conhecimento">
+                        Bancos de Dados:</li>
+                    <li itemprop="skills">
+                        PostgreSQL | MySQL | Mongodb</li>
+                    <li itemprop="skills" class="area-conhecimento">
+                        Frameworkers:</li>
+                    <li itemprop="skills">
+                        Vue.js | React Native | Spring Boot</li>
+                    <li itemprop="skills" class="area-conhecimento">
+                        Outros:</li>
+                    <li itemprop="skills">
+                        Git & Github | CSS | HTML </li>
                 </ul>
             </div>
         </section>
@@ -76,7 +85,10 @@
         <div class="linha">
             <footer>
                 <div class="coluna col12">
-                    <span> &copy; 2021 - RSite</span>
+                    <span itemtype="https://schema.org/CreativeWork" itemprop="copyrightYear">
+                        &copy; 2021 -
+                        <span itemprop="copyrightHolder">RSite</span>
+                    </span>
                 </div>
             </footer>
         </div>
